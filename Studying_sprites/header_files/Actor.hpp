@@ -32,7 +32,9 @@ class Actor
  ******************************************************************************/
 	public:
 		State			getState() const;
-// ...
+		const Vector2&	getPosition() const;
+		void 			setPosition(const Vector2& pos);
+	// ...
 
 /*******************************************************************************
  * 				ADD/REMOVE COMPONENTS								 		   *

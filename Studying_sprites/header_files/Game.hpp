@@ -6,7 +6,8 @@
 # include <vector>
 # include <utility>
 # include "defines.hpp"
-
+# include <string>
+# include <unordered_map>
 
 class Game
 {
@@ -22,6 +23,7 @@ class Game
 		std::vector<class Actor*>			actors;
 		std::vector<class Actor*>			pendingActors;
 		std::vector<class SpriteComponent*>	sprites;
+		std::unordered_map<std::string, SDL_Texture*> textures;
 
 /*******************************************************************************
  * 					CONSTRUCTOR AND DESTRUCTOR								   *
@@ -39,6 +41,7 @@ class Game
 		void addActor(class Actor* actor);
 		void addSprite(class SpriteComponent* sprite);
 		void removeActor(class Actor* actor);
+		SDL_Texture *getTexture(const std::string& fileName);
 
 
 /*******************************************************************************

@@ -1,4 +1,4 @@
-#include "BackgroundSpriteComponent.hpp"
+#include "../header_files/BackgroundSpriteComponent.hpp"
 
 void BackgroundSpriteComponent::setScreenSize(const Vector2& size)
 {

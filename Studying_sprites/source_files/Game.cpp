@@ -173,3 +173,18 @@ void Game::shutdown()
 		delete this->actors.back();
 	}
 }
+
+SDL_Texture* Game::getTexture(const std::string &fileName)
+{
+	SDL_Texture *tex = nullptr;
+	auto iter = this->textures.find(fileName);
+	if (iter != this->textures.end())
+	{
+		tex = iter->second;
+	}
+	else
+	{
+		tex = this->loadTexture(fileName.c_str());
+	}
+	return tex;
+}
