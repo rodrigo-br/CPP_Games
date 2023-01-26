@@ -1,0 +1,9 @@
+[submodule "Pac_Man"]
+	path = Pac_Man
+	url = git@github.com:rodrigo-br/Pac_Man.git
+[submodule "Pong"]
+	path = Pong
+	url = git@github.com:rodrigo-br/Pong.git
+[submodule "Snake_Game"]
+	path = Snake_Game
+	url = git@github.com:rodrigo-br/Snake_Game.git
